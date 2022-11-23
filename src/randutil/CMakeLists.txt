@@ -1,0 +1,1 @@
+add_library(randutil randutil.hpp randutil.cpp)

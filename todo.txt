@@ -1,0 +1,9 @@
+Pull catch2 from git using CMake
+Create a dockerfile to run the application (script installation of dependencies)
+Add additional tests and refactor implementation
+Explore other activation functions 
+Implement learning rules / methods
+Implement python -> c++ bindings and transition to python coding
+Apply to projects
+Tie back into tensorflow / pytorch 
+Complete article
