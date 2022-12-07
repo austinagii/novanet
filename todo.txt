@@ -7,3 +7,8 @@ Implement python -> c++ bindings and transition to python coding
 Apply to projects
 Tie back into tensorflow / pytorch 
 Complete article
+
+create binary classifier for spoked words 'zero' and 'one'
+do end to end training in c++ first (read from csv file, load training data and partition test data, train unipolar neuron, cross validate)
+add c++ bindings for opus utils and unipolar neuron in python
+repeat end to end training in python using pandas and other common libs

@@ -8,12 +8,11 @@
  * @brief Read 1 seconds worth of PCM data from the specified opus file at an expected sample rate of 48KHz
  */
 std::unique_ptr<float[]> get_samples(OggOpusFile* file) {
-	static const int expected_sample_rate = 48000;
 	// ensure that the current opus file is sampled at the expected rate
 	const OpusHead* head = op_head(file, -1);
-	assert((*head).input_sample_rate == expected_sample_rate);
+	assert((*head).input_sample_rate == opus::SAMPLE_RATE);
 
-	int total_samples_to_read = 1 * expected_sample_rate;
+	int total_samples_to_read = 1 * opus::SAMPLE_RATE;
 	std::unique_ptr<float[]> samples = std::make_unique<float[]>(total_samples_to_read);
 	std::size_t samples_read = 0; 
 	std::size_t total_samples_read = 0;

@@ -3,6 +3,8 @@
 #include "opusfile.h"
 
 namespace opus {
+    const int SAMPLE_RATE = 48000;
+
     /**
      * @brief Read 1 seconds worth of PCM data from the specified opus file at an expected sample rate of 48KHz
      */
